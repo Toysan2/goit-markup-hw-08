@@ -53,3 +53,10 @@
         background-color: $only-blue;
     }
 }
+.team li {
+    min-width: 354px;
+}
+.team ul {
+    display: flex;
+    flex-wrap: wrap;
+}

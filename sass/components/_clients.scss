@@ -3,10 +3,14 @@
         display: flex;
         justify-content: center;
         gap: 30px;
-        @media (max-width: 480px) {
+
+        @media (min-width: 0px) {
             flex-wrap: wrap;
-            max-width: 480px;
-            gap: 10px;
+            width: 480px;
+        }
+        @media (min-width: 481px) {
+            flex-wrap: wrap;
+            width: 768px;
         }
     }
     &__animation {
@@ -25,8 +29,11 @@
         transition-property: border-color;
         transition-duration: 250ms;
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-        @media (max-width: 480px) {
-            max-width: 210px;
+        @media (min-width: 0px) {
+            width: 210px;
+        }
+        @media (min-width: 481px) {
+            width: 226px;
         }
     }
     &__size:hover &__animation {
