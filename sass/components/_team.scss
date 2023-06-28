@@ -1,9 +1,4 @@
 .team {
-    &__employee-picture {
-        max-width: 960px;
-        min-width: 320px;
-        margin: 0 auto;
-    }
     &__employee--name {
         color: $dark-font;
         font-weight: 500;
