@@ -152,14 +152,12 @@ img {
     text-align: center;
     display: flex;
     gap: 30px;
-    @media (max-width: 480px) {
+    @media (min-width: 0px) {
         flex-direction: column;
-        max-width: 480px;
         align-self: center;
     }
-    @media (max-width: 768x) {
+    @media (min-width: 481) {
         flex-wrap: wrap;
-        width: 354px;
         align-self: center;
     }
 }
