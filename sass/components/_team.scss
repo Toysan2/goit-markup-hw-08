@@ -18,6 +18,9 @@
         justify-content: center;
         gap: 10px;
         padding-bottom: 30px;
+        @media (max-width: 480px) {
+            margin-top: 16px;
+        }
     }
     &__social-icon__size {
         width: 44px;

@@ -65,6 +65,9 @@ img {
     @media (max-width: 480px) {
         padding: 16px 0 16px;
     }
+    @media (max-width: 480px) {
+        padding: 26px 0 26px;
+    }
 }
 .logo {
     font-family: $secondary-font;
@@ -91,8 +94,22 @@ img {
     background-repeat: no-repeat;
     background-color: $dark-background;
     background-position: center;
-    background-size: contain;
-    resize: both;
+    @media (max-width: 480px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background: url('../images/about-us/m-hero-background.jpg');
+        background-repeat: no-repeat;
+        width: 480px;
+        height: 400px;
+    }
+    @media (max-width: 768px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background: url('../images/about-us/t-hero-background.jpg');
+        background-repeat: no-repeat;
+        width: 768px;
+        height: 400px;
+    }
 }
 /*modal - index.html*/
 

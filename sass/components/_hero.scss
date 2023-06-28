@@ -6,6 +6,13 @@
         line-height: 1.3636;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        @media (max-width: 480px) {
+            text-align: center;
+            font-size: 26px;
+            line-height: 42px;
+            letter-spacing: 1.56px;
+            text-transform: uppercase;
+        }
     }
     &__button {
         border: none;
@@ -20,5 +27,9 @@
         margin: 0 auto;
         background-color: $only-blue;
         color: $white-font;
+    }
+    @media (max-width: 480px) {
+        width: 200px;
+        height: 50px;
     }
 }
