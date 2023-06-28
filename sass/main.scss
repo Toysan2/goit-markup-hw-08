@@ -1,0 +1,149 @@
+@import 'utils/vars.scss';
+@import 'components/header.scss';
+@import 'components/mobile-menu.scss';
+@import 'components/logo.scss';
+@import 'components/hero.scss';
+@import 'components/modal.scss';
+@import 'components/articles.scss';
+@import 'components/section.scss';
+@import 'components/team.scss';
+@import 'components/clients.scss';
+@import 'components/footer.scss';
+@import 'components/filters.scss';
+@import 'components/services.scss';
+
+/*Globals - klasy stosowane globalnie*/
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    z-index: 1;
+}
+@media (max-width: 480px) {
+    body {
+        max-width: 480px;
+    }
+}
+body {
+    font-family: $primary-font, sans-serif;
+    color: $dark-font;
+
+    @media (min-width: 320px) {
+        overflow-x: hidden;
+    }
+}
+ul {
+    list-style-type: none;
+}
+.section {
+    padding: 94px 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.backgroud--black {
+    background-color: $dark-background;
+}
+.background--grey {
+    background-color: $grey-background;
+}
+svg {
+    fill: $grey-font;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+/*Header*/
+.header {
+    padding: 24px 0 25px;
+    border-bottom: 1px solid #ececec;
+    @media (max-width: 480px) {
+        padding: 16px 0 16px;
+    }
+}
+.logo {
+    font-family: $secondary-font;
+    color: $only-blue;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    @media (max-width: 480px) {
+        font-size: 24px;
+    }
+}
+/* hero - index.html*/
+.hero {
+    color: $white-font;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    display: block;
+    background: url('../images/about-us/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-color: $dark-background;
+    background-position: center;
+    background-size: contain;
+    resize: both;
+}
+/*modal - index.html*/
+
+.modal {
+    position: absolute;
+    background-color: $white-font;
+    transform: scale(1);
+    transition: transform 250ms ease-in;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* LOREM IPSUM - index.html*/
+
+.articles {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+/* Czym się zajmujemy - index.html */
+@media (max-width: 1200px) {
+    .disappear {
+        display: none;
+    }
+}
+
+/* Nasz zespół - index.html*/
+
+.team {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    @media (max-width: 480px) {
+        flex-direction: column;
+        max-width: 480px;
+        align-self: center;
+    }
+}
+ul#team li {
+    background-color: $white-font;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Nasi klienci - index.html*/
+/* Footer */
+.footer {
+    padding: 60px 0;
+    background-color: $dark-background;
+}
+/* main - filters - portfolio.html */
+/* main - products = portfolio.html */

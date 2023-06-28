@@ -1,0 +1,90 @@
+.header {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 93px;
+    }
+    &__menu {
+        display: flex;
+        gap: 46px;
+    }
+    &__contacts {
+        display: flex;
+        gap: 50px;
+    }
+    &__link {
+        font-style: normal;
+        text-decoration: none;
+        color: $dark-font;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link--active {
+        color: $only-blue;
+        position: relative;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link--active::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: $only-blue;
+        top: 45px;
+        left: 0;
+        right: 0;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+    }
+    &__font {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        text-decoration: none;
+        color: $grey-font;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon {
+        margin-right: 10px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__font:hover &__icon,
+    &__font:hover {
+        color: $only-blue;
+        fill: currentColor;
+    }
+    &__font:focus &__icon,
+    &__font:focus {
+        color: $only-blue;
+        fill: currentColor;
+    }
+
+    @media (max-width: 480px) {
+        &__menu {
+            display: none;
+        }
+        &__contacts {
+            display: none;
+        }
+    }
+}

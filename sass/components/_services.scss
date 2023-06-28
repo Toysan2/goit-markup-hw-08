@@ -1,0 +1,67 @@
+.services {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__footer {
+        margin-top: -4px;
+        gap: 4px;
+        padding: 20px 24px;
+        border: 1px solid #ececec;
+    }
+    &:hover {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &:focus {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__card--name {
+        color: $dark-background;
+        font-size: 18px;
+        line-height: 2;
+        font-weight: 700;
+    }
+    &-description {
+        color: $grey-font;
+        font-size: 16px;
+        line-height: 1.875;
+    }
+    &__card-img-container {
+        position: relative;
+        display: block;
+
+        object-fit: cover;
+        overflow: hidden;
+        @media (max-width: 480px) {
+            .services__card-img-container {
+                max-width: 450px;
+            }
+        }
+    }
+    &__card--description {
+        margin-bottom: 4px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(33, 150, 243, 0.9);
+        padding: 49px 45px 49px 24px;
+        font-size: 18px;
+        line-height: 1.55;
+        text-align: Left;
+        letter-spacing: 3%;
+        color: $white-font;
+        transform: translateY(102%);
+        transition: transform 250ms ease-in;
+    }
+    &__card:hover &__card--description {
+        transform: translateY(0);
+    }
+    &__card:focus &__card--description {
+        transform: translateY(0);
+    }
+}

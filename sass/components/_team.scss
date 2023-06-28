@@ -1,0 +1,57 @@
+.team {
+    &__employee-picture {
+        max-width: 960px;
+        min-width: 320px;
+        margin: 0 auto;
+    }
+    &__employee--name {
+        color: $dark-font;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.1875;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    &__employee-description {
+        color: $grey-font;
+        font-size: 16px;
+        line-height: 1.1875;
+        padding-bottom: 16px;
+    }
+    &__employee__social-icons-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+    &__social-icon__size {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color, fill, border-radius;
+        transition-duration: 250ms;
+        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 50%;
+    }
+    &__social-icon--animation {
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__social-icon__size:hover &__social-icon--animation {
+        fill: $white-font;
+    }
+    &__social-icon__size:hover {
+        fill: $white-font;
+        background-color: $only-blue;
+    }
+    &__social-icon__size:focus &__social-icon--animation {
+        fill: $white-font;
+    }
+    &__social-icon__size:focus {
+        fill: $white-font;
+        background-color: $only-blue;
+    }
+}
