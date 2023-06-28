@@ -47,6 +47,10 @@
         height: 4px;
         width: 100%;
         border-radius: 2px;
+
+        @media (max-width: 768px) {
+            top: 36px;
+        }
     }
     &__font {
         display: flex;
@@ -83,8 +87,34 @@
         &__menu {
             display: none;
         }
-        &__contacts {
-            display: none;
+    }
+}
+.contacts-font {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    text-decoration: none;
+    color: $grey-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .header__contacts {
+        display: list-item;
+        li {
+            margin-bottom: 10px;
         }
     }
 }
