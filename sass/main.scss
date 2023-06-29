@@ -136,12 +136,10 @@ img {
     gap: 30px;
 
     @media (min-width: 0px) and (max-width: 480px) {
-        max-width: 480px;
         align-self: center;
         flex-wrap: wrap;
     }
     @media (min-width: 481px) and (max-width: 1200px) {
-        max-width: 354px;
         align-self: center;
     }
 }
