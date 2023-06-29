@@ -64,4 +64,49 @@
         bottom: 0;
         text-transform: uppercase;
     }
+    &__picture-1 {
+        width: 370px;
+        height: 294px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/about-us/about-us-img-1-1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__picture-1 {
+                background-image: url('../images/about-us/about-us-img-1-2x.jpg');
+            }
+        }
+    }
+    &__picture-2 {
+        width: 370px;
+        height: 294px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/about-us/about-us-img-2-1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__picture-2 {
+                background-image: url('../images/about-us/about-us-img-2-2x.jpg');
+            }
+        }
+    }
+    &__picture-3 {
+        width: 370px;
+        height: 294px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/about-us/about-us-img-3-1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__picture-3 {
+                background-image: url('../images/about-us/about-us-img-3-2x.jpg');
+            }
+        }
+    }
 }

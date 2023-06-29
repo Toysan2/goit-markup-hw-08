@@ -93,25 +93,47 @@ img {
     padding-bottom: 200px;
     text-align: center;
     display: block;
-    background: url('../images/about-us/hero-background.jpg');
+    background: url('../images/about-us/d-hero-background-1x.jpg');
     background-repeat: no-repeat;
     background-color: $dark-background;
     background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        &__picture-1 {
+            background-image: url('../images/about-us/d-hero-background-2x.jpg');
+        }
+    }
     @media (min-width: 0px) and (max-width: 480px) {
         padding-top: 118px;
         padding-bottom: 118px;
-        background: url('../images/about-us/m-hero-background.jpg');
+        background: url('../images/about-us/m-hero-background-1x.jpg');
         background-repeat: no-repeat;
         width: 480px;
         height: 400px;
     }
+    @media (min-width: 0px) and (max-width: 480px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        &__picture-1 {
+            background-image: url('../images/about-us/m-hero-background-2x.jpg');
+        }
+    }
     @media (min-width: 481px) and (max-width: 768px) {
         padding-top: 118px;
         padding-bottom: 118px;
-        background: url('../images/about-us/t-hero-background.jpg');
+        background: url('../images/about-us/t-hero-background-1x.jpg');
         background-repeat: no-repeat;
         width: 768px;
         height: 400px;
+    }
+    @media (min-width: 0px) and (max-width: 480px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        &__picture-1 {
+            background-image: url('../images/about-us/t-hero-background-2x.jpg');
+        }
     }
 }
 /*modal - index.html*/

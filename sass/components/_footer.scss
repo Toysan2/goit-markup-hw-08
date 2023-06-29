@@ -10,9 +10,9 @@
             text-align: center;
         }
         @media (min-width: 481px) and (max-width: 768px) {
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 60px;
             text-align: center;
         }
     }
@@ -103,6 +103,11 @@
         margin-top: 12px;
         display: flex;
         justify-content: center;
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            margin: auto;
+        }
+
         &__input {
             border: Solid 1px rgba(255, 255, 255, 0.3);
             background-color: $dark-background;
