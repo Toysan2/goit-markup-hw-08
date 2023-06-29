@@ -1,31 +1,17 @@
 .articles {
-    &-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @media (min-width: 0px) {
-            flex-direction: column;
-            max-width: 480px;
-            align-self: center;
-        }
-        @media (min-width: 481px) {
-            flex-wrap: wrap;
-            max-width: 354px;
-            align-self: center;
-        }
-    }
     &__icon {
         display: flex;
         padding-top: 25px;
         justify-content: center;
+        justify-items: center;
         width: 270px;
         height: 120px;
         background-color: $grey-background;
         border-radius: 4px;
-        @media (min-width: 0px) {
+        @media (min-width: 0px) and (max-width: 480px) {
             width: 450px;
         }
-        @media (min-width: 481px) {
+        @media (min-width: 481px) and (max-width: 768px) {
             width: 354px;
         }
     }
@@ -38,7 +24,7 @@
         text-transform: uppercase;
         padding-bottom: 10px;
         padding-top: 30px;
-        @media (max-width: 768px) {
+        @media (max-width: 480px) {
             text-align: center;
         }
     }

@@ -4,11 +4,11 @@
         justify-content: center;
         gap: 30px;
 
-        @media (min-width: 0px) {
+        @media (min-width: 0px) and (max-width: 480px) {
             flex-wrap: wrap;
             width: 480px;
         }
-        @media (min-width: 481px) {
+        @media (min-width: 481px) and (max-width: 768px) {
             flex-wrap: wrap;
             width: 768px;
         }
@@ -29,10 +29,10 @@
         transition-property: border-color;
         transition-duration: 250ms;
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-        @media (min-width: 0px) {
+        @media (min-width: 0px) and (max-width: 480px) {
             width: 210px;
         }
-        @media (min-width: 481px) {
+        @media (min-width: 481px) and (max-width: 768px) {
             width: 226px;
         }
     }

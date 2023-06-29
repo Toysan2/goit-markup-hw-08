@@ -12,7 +12,7 @@
     transition-duration: 250ms;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media (max-width: 480px) {
+    @media (min-width: 0px) and (max-width: 480px) {
         &--1 {
             width: 103px;
             height: 38px;
@@ -42,7 +42,7 @@
     margin: 0 auto;
     padding-bottom: 50px;
     gap: 8px;
-    @media (max-width: 480px) {
+    @media (min-width: 0px) and (max-width: 480px) {
         flex-wrap: wrap;
     }
 }

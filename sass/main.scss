@@ -28,10 +28,10 @@ body {
     @media (min-width: 320px) {
         overflow-x: hidden;
     }
-    @media (min-width: 0px) {
+    @media (min-width: 0px) and (max-width: 481px) {
         max-width: 480px;
     }
-    @media (min-width: 481x) {
+    @media (min-width: 481x) and (max-width: 1200px) {
         max-width: 768px;
     }
 }
@@ -65,10 +65,10 @@ img {
 .header {
     padding: 24px 0 25px;
     border-bottom: 1px solid #ececec;
-    @media (min-width: 0px) {
+    @media (min-width: 0px) and (max-width: 480px) {
         padding: 16px 0 16px;
     }
-    @media (min-width: 481px) {
+    @media (min-width: 0px) and (max-width: 768px) {
         padding: 16px 0 6px;
     }
 }
@@ -81,10 +81,7 @@ img {
     font-weight: 700;
     letter-spacing: 0.03em;
 
-    @media (min-width: 0px) {
-        font-size: 24px;
-    }
-    @media (max-width: 480px) {
+    @media (min-width: 0px) and (max-width: 768px) {
         font-size: 24px;
     }
 }
@@ -100,7 +97,7 @@ img {
     background-repeat: no-repeat;
     background-color: $dark-background;
     background-position: center;
-    @media (min-width: 0px) {
+    @media (min-width: 0px) and (max-width: 480px) {
         padding-top: 118px;
         padding-bottom: 118px;
         background: url('../images/about-us/m-hero-background.jpg');
@@ -108,7 +105,7 @@ img {
         width: 480px;
         height: 400px;
     }
-    @media (min-width: 481px) {
+    @media (min-width: 481px) and (max-width: 768px) {
         padding-top: 118px;
         padding-bottom: 118px;
         background: url('../images/about-us/t-hero-background.jpg');
@@ -133,10 +130,19 @@ img {
 
 .articles {
     justify-content: center;
+    align-items: center;
+    justify-items: center;
     display: flex;
     gap: 30px;
-    @media (max-width: 768px) {
+
+    @media (min-width: 0px) and (max-width: 480px) {
+        max-width: 480px;
+        align-self: center;
         flex-wrap: wrap;
+    }
+    @media (min-width: 481px) and (max-width: 1200px) {
+        max-width: 354px;
+        align-self: center;
     }
 }
 /* Czym się zajmujemy - index.html */
@@ -153,11 +159,11 @@ img {
     text-align: center;
     display: flex;
     gap: 30px;
-    @media (min-width: 0px) {
+    @media (min-width: 0px) and (max-width: 480px) {
         flex-direction: column;
         align-self: center;
     }
-    @media (min-width: 481) {
+    @media (min-width: 481px) and (max-width: 768px) {
         flex-wrap: wrap;
         align-self: center;
     }
