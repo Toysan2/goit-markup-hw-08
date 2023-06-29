@@ -129,17 +129,15 @@ img {
 /* LOREM IPSUM - index.html*/
 
 .articles {
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
     display: flex;
     gap: 30px;
 
     @media (min-width: 0px) and (max-width: 480px) {
+        flex-direction: column;
         align-self: center;
-        flex-wrap: wrap;
     }
     @media (min-width: 481px) and (max-width: 1200px) {
+        flex-wrap: wrap;
         align-self: center;
     }
 }
