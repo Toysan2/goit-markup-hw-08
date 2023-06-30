@@ -66,10 +66,10 @@ img {
     padding: 24px 0 25px;
     border-bottom: 1px solid #ececec;
     @media (min-width: 0px) and (max-width: 480px) {
-        padding: 16px 0 16px;
+        padding: 10px 0 10px;
     }
-    @media (min-width: 0px) and (max-width: 768px) {
-        padding: 16px 0 6px;
+    @media (min-width: 481px) and (max-width: 768px) {
+        padding: 16px 0 16px;
     }
 }
 .logo {

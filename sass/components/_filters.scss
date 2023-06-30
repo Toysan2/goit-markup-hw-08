@@ -38,12 +38,16 @@
 }
 .filters {
     display: flex;
-    justify-content: left;
     margin: 0 auto;
+    justify-content: center;
     padding-bottom: 50px;
     gap: 8px;
     @media (min-width: 0px) and (max-width: 480px) {
         flex-wrap: wrap;
+        justify-content: left;
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+        margin: 0;
     }
 }
 .button:hover {

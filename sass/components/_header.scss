@@ -72,6 +72,12 @@
         transition-duration: 250ms;
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    &__icon-mobile {
+        margin-right: 10px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     &__font:hover &__icon,
     &__font:hover {
         color: $only-blue;
