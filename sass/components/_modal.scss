@@ -31,7 +31,7 @@
     }
     @media (max-width: 480px) {
         height: 609px;
-        width: 450px;
+        width: calc(100% - 30px);
     }
     &__close-button {
         display: block;

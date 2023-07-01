@@ -9,11 +9,13 @@
         background-color: $grey-background;
         border-radius: 4px;
         @media (min-width: 0px) and (max-width: 480px) {
-            width: 450px;
+            width: 100%;
+            max-width: 450px;
             margin: auto;
         }
         @media (min-width: 481px) and (max-width: 768px) {
-            width: 354px;
+            width: 100%;
+            max-width: 354px;
             margin: auto;
         }
     }
@@ -36,9 +38,11 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         @media (min-width: 0px) and (max-width: 480px) {
+            width: 100%;
             max-width: 450px;
         }
         @media (min-width: 481px) and (max-width: 768px) {
+            width: 100%;
             max-width: 354px;
         }
     }

@@ -15,7 +15,8 @@
         }
         @media (min-width: 0px) and (max-width: 480px) {
             background-image: url('../images/team/m-team-img-1-1x.jpg');
-            width: 450px;
+            width: 100%;
+            max-width: 450px;
             height: 460px;
         }
         @media (min-width: 0px) and (max-width: 480px) and (min-device-pixel-ratio: 2),
@@ -23,7 +24,8 @@
             (min-resolution: 2dppx) {
             &__picture-1 {
                 background-image: url('../images/team/m-team-img-1-2x.jpg');
-                width: 450px;
+                width: 100%;
+                max-width: 450px;
                 height: 460px;
             }
         }
@@ -37,7 +39,8 @@
             (min-resolution: 2dppx) {
             &__picture-1 {
                 background-image: url('../images/team/t-team-img-1-2x.jpg');
-                width: 354px;
+                width: 100%;
+                max-width: 354px;
                 height: 374px;
             }
         }
@@ -58,7 +61,8 @@
         }
         @media (min-width: 0px) and (max-width: 480px) {
             background-image: url('../images/team/m-team-img-2-1x.jpg');
-            width: 450px;
+            width: 100%;
+            max-width: 450px;
             height: 460px;
         }
         @media (min-width: 0px) and (max-width: 480px) and (min-device-pixel-ratio: 2),
@@ -101,7 +105,8 @@
         }
         @media (min-width: 0px) and (max-width: 480px) {
             background-image: url('../images/team/m-team-img-3-1x.jpg');
-            width: 450px;
+            width: 100%;
+            max-width: 450px;
             height: 460px;
         }
         @media (min-width: 0px) and (max-width: 480px) and (min-device-pixel-ratio: 2),
@@ -144,7 +149,8 @@
         }
         @media (min-width: 0px) and (max-width: 480px) {
             background-image: url('../images/team/m-team-img-4-1x.jpg');
-            width: 450px;
+            width: 100%;
+            max-width: 450px;
             height: 460px;
         }
         @media (min-width: 0px) and (max-width: 480px) and (min-device-pixel-ratio: 2),
