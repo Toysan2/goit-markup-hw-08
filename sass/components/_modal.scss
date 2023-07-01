@@ -53,6 +53,12 @@
         letter-spacing: 3%;
         color: $dark-font;
         text-align: center;
+
+        @media (max-width: 480px) {
+            margin: auto;
+            word-break: normal;
+            width: 350px;
+        }
     }
     &-form__user-data-font {
         font-family: Roboto;
