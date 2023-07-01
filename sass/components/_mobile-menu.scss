@@ -159,5 +159,5 @@ ul#mobile-menu-social li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc((40 * 3px) + 32px + 64px);
+    gap: 64px;
 }
