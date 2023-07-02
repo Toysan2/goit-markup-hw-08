@@ -229,3 +229,9 @@
         background-color: $only-blue;
     }
 }
+.team li {
+    @media (min-width: 481px) and (max-width: 1200px) {
+        width: 100%;
+        max-width: 354px;
+    }
+}

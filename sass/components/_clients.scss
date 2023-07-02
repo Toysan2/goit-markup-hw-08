@@ -10,10 +10,13 @@
             width: 100%;
             max-width: 480px;
         }
-        @media (min-width: 481px) and (max-width: 768px) {
-            flex-wrap: wrap;
-            width: 100%;
-            max-width: 768px;
+        @media (min-width: 481px) and (max-width: 1200px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-self: center;
+            justify-items: center;
+            align-items: center;
         }
     }
     &__animation {
