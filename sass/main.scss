@@ -40,7 +40,6 @@ ul {
 }
 .container {
     width: 100%;
-    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -65,7 +64,7 @@ img {
     @media (min-width: 0px) and (max-width: 480px) {
         padding: 10px 0 10px;
     }
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 481px) and (max-width: 1200px) {
         padding: 16px 0 16px;
     }
 }
@@ -78,7 +77,7 @@ img {
     font-weight: 700;
     letter-spacing: 0.03em;
 
-    @media (min-width: 0px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 1200px) {
         font-size: 24px;
     }
 }
@@ -125,7 +124,7 @@ img {
         max-width: 768px;
         height: 400px;
     }
-    @media (min-width: 0px) and (max-width: 480px) and (min-device-pixel-ratio: 2),
+    @media (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         &__picture-1 {
@@ -155,13 +154,13 @@ img {
         flex-direction: column;
         align-self: center;
     }
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 481px) and (max-width: 1200px) {
         flex-wrap: wrap;
         align-self: center;
     }
 }
 /* Czym się zajmujemy - index.html */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .disappear {
         display: none;
     }
@@ -178,7 +177,7 @@ img {
         flex-direction: column;
         align-self: center;
     }
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 481px) and (max-width: 1200px) {
         flex-wrap: wrap;
         align-self: center;
     }

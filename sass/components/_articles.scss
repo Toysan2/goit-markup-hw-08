@@ -4,16 +4,18 @@
         padding-top: 25px;
         justify-content: center;
         justify-items: center;
-        width: 270px;
+        width: 100%;
+        max-width: 270px;
         height: 120px;
         background-color: $grey-background;
         border-radius: 4px;
+
         @media (min-width: 0px) and (max-width: 480px) {
             width: 100%;
             max-width: 450px;
             margin: auto;
         }
-        @media (min-width: 481px) and (max-width: 768px) {
+        @media (min-width: 481px) and (max-width: 1200px) {
             width: 100%;
             max-width: 354px;
             margin: auto;
@@ -31,6 +33,11 @@
         @media (max-width: 480px) {
             text-align: center;
         }
+        @media (min-width: 481px) and (max-width: 1200px) {
+            width: 100%;
+            max-width: calc(50% - 60px);
+            padding-left: auto;
+        }
     }
     &--text {
         color: $grey-font;
@@ -41,9 +48,10 @@
             width: 100%;
             max-width: 450px;
         }
-        @media (min-width: 481px) and (max-width: 768px) {
+        @media (min-width: 481px) and (max-width: 1200px) {
             width: 100%;
             max-width: 354px;
+            margin: auto;
         }
     }
     &__img-with-title {
@@ -110,5 +118,12 @@
                 background-image: url('../images/about-us/about-us-img-3-2x.jpg');
             }
         }
+    }
+}
+.articles li {
+    @media (min-width: 481px) and (max-width: 1200px) {
+        width: 100%;
+        max-width: calc(50% - 60px);
+        margin: auto;
     }
 }
