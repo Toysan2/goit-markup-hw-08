@@ -12,6 +12,9 @@
     &__menu {
         display: flex;
         gap: 46px;
+        @media (min-width: 481px) and (max-width: 1200px) {
+            margin-right: 20px;
+        }
     }
     &__contacts {
         display: flex;
@@ -124,7 +127,15 @@
         display: list-item;
         li {
             margin-bottom: 10px;
-            margin-left: 101px;
+            margin: auto;
         }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .header__contacts {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 20px;
     }
 }
