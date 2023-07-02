@@ -12,9 +12,10 @@
         @media (min-width: 481px) and (max-width: 1200px) {
             flex-wrap: wrap;
             justify-items: center;
-            justify-content: space-between;
+            justify-content: center;
             gap: 60px;
             text-align: center;
+            margin-left: 80px;
         }
     }
     &-font {
@@ -167,13 +168,4 @@
 }
 .svg-fill--white {
     fill: $white-font;
-}
-.footer-wrapper:nth-child(1n) {
-    width: 100%;
-}
-.footer-wrapper:nth-child(2n) {
-    width: 100%;
-}
-.footer-wrapper:nth-child(3n) {
-    width: 100%;
 }
