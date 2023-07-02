@@ -148,6 +148,8 @@ img {
 
 .articles {
     display: flex;
+    justify-items: center;
+    justify-content: center;
     gap: 30px;
 
     @media (min-width: 0px) and (max-width: 480px) {

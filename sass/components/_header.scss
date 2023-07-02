@@ -51,7 +51,7 @@
         width: 100%;
         border-radius: 2px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             top: 36px;
         }
     }
@@ -92,7 +92,7 @@
         fill: currentColor;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         &__menu {
             display: none;
         }
@@ -112,13 +112,8 @@
     transition-duration: 250ms;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media (min-width: 0px) and (max-width: 480px) {
+    @media (min-width: 0px) and (max-width: 768px) {
         display: none;
-    }
-
-    @media (min-width: 481px) and (max-width: 768px) {
-        display: flex;
-        font-size: 12px;
     }
 }
 

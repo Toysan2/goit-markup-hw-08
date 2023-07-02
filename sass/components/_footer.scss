@@ -2,6 +2,7 @@
     &-wrapper {
         display: flex;
         gap: 70px;
+        justify-content: center;
 
         @media (min-width: 0px) and (max-width: 480px) {
             flex-direction: column;
@@ -103,7 +104,7 @@
     }
     &__newsletter {
         margin-top: 12px;
-        display: flex;
+        display: inline-flex;
         justify-content: center;
 
         @media (min-width: 481px) and (max-width: 1200px) {
@@ -116,7 +117,8 @@
             border: Solid 1px rgba(255, 255, 255, 0.3);
             background-color: $dark-background;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            width: 358px;
+            width: 100%;
+            max-width: 358px;
             height: 50px;
             border-radius: 4px;
             color: $white-font;
@@ -126,7 +128,8 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            width: 200px;
+            width: 100%;
+            max-width: 200px;
             height: 50px;
             background-color: $only-blue;
             gap: 24px;
